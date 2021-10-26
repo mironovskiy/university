@@ -1,0 +1,147 @@
+###Lecture
+DELETE http://localhost:8080/lecture/delete
+Content-Type: application/x-www-form-urlencoded
+
+id=25
+
+###
+PUT http://localhost:8080/lecture/update
+Content-Type: application/x-www-form-urlencoded
+
+id=20&date=2021-10-31&groupNumber=772303&lectureHallNumber=104&subjectName=ООП
+
+###
+POST http://localhost:8080/lecture/add
+Content-Type: application/x-www-form-urlencoded
+
+date=2021-10-31&groupNumber=772303&lectureHallNumber=102&subjectName=ООП
+
+###
+GET http://localhost:8080/lecture/getAll
+Accept: application/json
+
+###
+GET http://localhost:8080/lecture/get?studentId=10&date=2021-10-31
+Accept: application/json
+
+
+
+
+
+###Student
+DELETE http://localhost:8080/student/delete
+Content-Type: application/x-www-form-urlencoded
+
+id=11
+
+###
+PUT http://localhost:8080/student/update
+Content-Type: application/x-www-form-urlencoded
+
+id=6&name=Дмитрий&lastname=Шнип&groupNumber=772302
+
+###
+POST http://localhost:8080/student/add
+Content-Type: application/x-www-form-urlencoded
+
+name=Илья&lastname=Мироновский&groupNumber=772301
+
+###
+GET http://localhost:8080/student/getAll
+Accept: application/json
+
+###
+GET http://localhost:8080/student/getById?id=2
+Accept: application/json
+
+
+
+
+
+###Subject
+DELETE http://localhost:8080/subject/delete
+Content-Type: application/x-www-form-urlencoded
+
+id=7
+
+###
+PUT http://localhost:8080/subject/update
+Content-Type: application/x-www-form-urlencoded
+
+id=6&newName=Менеджмент
+
+###
+POST http://localhost:8080/subject/add
+Content-Type: application/x-www-form-urlencoded
+
+subjectName=Философия
+
+###
+GET http://localhost:8080/subject/getAll
+Accept: application/json
+
+###
+GET http://localhost:8080/subject/getById?id=2
+Accept: application/json
+
+
+
+
+
+###LectureHall
+DELETE http://localhost:8080/lectureHall/delete
+Content-Type: application/x-www-form-urlencoded
+
+id=6
+
+###
+PUT http://localhost:8080/lectureHall/update
+Content-Type: application/x-www-form-urlencoded
+
+id=3&newNumber=103
+
+###
+POST http://localhost:8080/lectureHall/add
+Content-Type: application/x-www-form-urlencoded
+
+lectureHallNumber=105
+
+###
+GET http://localhost:8080/lectureHall/getAll
+Accept: application/json
+
+###
+GET http://localhost:8080/lectureHall/getById?id=2
+Accept: application/json
+
+
+
+
+
+###Group
+DELETE http://localhost:8080/group/delete
+Content-Type: application/x-www-form-urlencoded
+
+id=8
+
+###
+PUT http://localhost:8080/group/update
+Content-Type: application/x-www-form-urlencoded
+
+id=8&newNumber=773601
+
+###
+POST http://localhost:8080/group/add
+Content-Type: application/x-www-form-urlencoded
+
+groupNumber=772603
+
+###
+GET http://localhost:8080/group/getAll
+Accept: application/json
+
+###
+GET http://localhost:8080/group/getById?id=2
+Accept: application/json
+
+###
